@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  db:
+    ports: 
+      - "5432:5432"
+    image: "mdillon/postgis"
+    restart: "always"
+    environment:
+      POSTGRES_PASSWORD: "devdb"
+
+  adminer:
+    image: "adminer"
+    restart: "always"
+    ports:
+      - "8080:8080"

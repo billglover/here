@@ -5,7 +5,7 @@
 The system is made up of a number of services:
 
 - nearby - provides a list of venues nearby a given location
-- venue - provides the ability to update venue information
+- venue - provides the ability to query and update venue information
 - checkin - provides the ability for users to record their location
 - timeline - provides the location history for a user
 
