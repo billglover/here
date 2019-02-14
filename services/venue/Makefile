@@ -1,6 +1,6 @@
 SERVICE = venue
 
-.PHONEY: up down start stop dbadmin
+.PHONEY: up down start stop dbadmin seed
 
 up:
 	docker-compose --project-name $(SERVICE) up --force-recreate -d
@@ -16,3 +16,6 @@ stop:
 
 dbadmin:
 	open http://localhost:8080/
+
+seed:
+	./seed.sh
