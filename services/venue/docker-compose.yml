@@ -4,7 +4,7 @@ services:
   db:
     ports: 
       - "5432:5432"
-    image: "mdillon/postgis"
+    build: "images/db"
     restart: "always"
     environment:
       POSTGRES_PASSWORD: "devdb"
